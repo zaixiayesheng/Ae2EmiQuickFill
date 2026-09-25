@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8.5",
+  "package": "com.zaixiayesheng.emi_ae2_shift_craft.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "Ae2AbstractRecipeHandlerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,27 @@
+# Gradle
+build/
+.gradle/
+!gradle/wrapper/gradle-wrapper.jar
+
+# 开发用运行目录（runClient / runServer）
+run/
+run-*/
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.eclipse/
+.settings/
+.classpath
+.project
+bin/
+
+# Compile-only third-party jars (see libs/README.md for how to populate)
+libs/*.jar
+
+# OS
+.DS_Store
+Thumbs.db
