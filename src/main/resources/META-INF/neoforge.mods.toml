@@ -13,7 +13,7 @@ logoFile = "icon.png"
 displayTest = "IGNORE_ALL_VERSION"
 
 [[mixins]]
-config = "emi_ae2_shift_craft.mixins.json"
+config = "ae2_emi_quick_fill.mixins.json"
 
 [[dependencies.${mod_id}]]
 modId = "forge"
