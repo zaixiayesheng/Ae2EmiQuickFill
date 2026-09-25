@@ -7,7 +7,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * EMI AE2 Shift-Click Craft — main mod entry point.
+ * AE2: EMI Quick Fill — main mod entry point.
  *
  * <p>Client-side only: no blocks, items, packets or registry entries. Everything is done by
  * {@link com.zaixiayesheng.emi_ae2_shift_craft.mixin.Ae2AbstractRecipeHandlerMixin}.
@@ -30,6 +30,6 @@ public final class EmiAe2ShiftCraft {
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
     public EmiAe2ShiftCraft(IEventBus modEventBus) {
-        LOGGER.info("EMI AE2 Shift-Click Craft loaded — shift-click a recipe to pull it into any AE2 terminal.");
+        LOGGER.info("AE2: EMI Quick Fill loaded — shift-click a recipe to pull it into any AE2 terminal.");
     }
 }

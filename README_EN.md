@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="src/main/resources/icon.png" alt="EMI AE2 Shift-Click Craft" width="128" height="128">
+<img src="src/main/resources/icon.png" alt="AE2: EMI Quick Fill" width="128" height="128">
 
-# EMI AE2 Shift-Click Craft
+# AE2: EMI Quick Fill
 
 English | [中文](README.md)
 
