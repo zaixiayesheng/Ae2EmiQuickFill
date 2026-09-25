@@ -7,7 +7,7 @@ group = mod_group_id
 version = mod_version
 
 base {
-    // 产物名带游戏版本：emi_ae2_shift_craft-1.21.1-1.0.0.jar
+    // 产物名带游戏版本：ae2_emi_quick_fill-1.21.1-1.0.0.jar
     archivesName = "${mod_id}-${minecraft_version}"
 }
 

@@ -1,4 +1,4 @@
-package com.zaixiayesheng.emi_ae2_shift_craft.mixin;
+package com.zaixiayesheng.ae2_emi_quick_fill.mixin;
 
 import dev.emi.emi.api.recipe.handler.EmiCraftContext;
 import org.spongepowered.asm.mixin.Mixin;
