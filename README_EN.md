@@ -21,7 +21,7 @@ EMI sends `CRAFTABLE` for Shift+click transfers, but AE2's terminals (crafting t
 Shift+click an EMI recipe in any AE2-family terminal:
 
 - Materials in the ME network → filled into the crafting grid / encoded into the pattern
-- Missing materials → the same missing-ingredient feedback as the plus button; hold Ctrl to auto-submit what is missing
+- Missing materials → nothing is transferred, AE2 reports which ingredients could not be extracted ("hold Ctrl to craft" belongs to the plus button in the recipe view, not to shift-click)
 
 No config, no GUI. Client-side only, the server does not need it.
 
@@ -30,7 +30,7 @@ No config, no GUI. Client-side only, the server does not need it.
 - AE2 Crafting Terminal
 - AE2 Wireless Crafting Terminal
 - AE2 Pattern Encoding Terminal
-- Any third-party terminal extending AE2's `AbstractRecipeHandler`
+- Any third-party terminal extending AE2's `AbstractRecipeHandler` (automatic unless it overrides `canCraft`; the pattern encoding terminal does, and is patched separately)
 
 ## How it works
 
