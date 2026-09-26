@@ -25,13 +25,20 @@ import org.spongepowered.asm.mixin.injection.Redirect;
  * {@code canCraft} passes the original fill packet logic executes unchanged — no transfer
  * code is rewritten.
  *
- * <h2>Target class</h2>
- * <p>{@code appeng.integration.modules.emi.AbstractRecipeHandler} is package-private, so it
- * is referenced by string in {@link Mixin#targets()} rather than by a literal class.
+ * <h2>Target classes</h2>
+ * <p>{@code appeng.integration.modules.emi.AbstractRecipeHandler} is package-private, so it is
+ * referenced by string in {@link Mixin#targets()} rather than by a literal class.
+ *
+ * <p>{@code EmiEncodePatternHandler} (the pattern encoding terminal) extends it but overrides
+ * {@code canCraft} with the same {@code getType() == FILL_BUTTON} guard, so it needs the redirect
+ * too — patching the parent alone leaves the encoding terminal rejecting shift-click.
  *
  * @author zaixiayesheng (在下叶笙)
  */
-@Mixin(targets = "appeng.integration.modules.emi.AbstractRecipeHandler")
+@Mixin(targets = {
+        "appeng.integration.modules.emi.AbstractRecipeHandler",
+        "appeng.integration.modules.emi.EmiEncodePatternHandler"
+})
 public class Ae2AbstractRecipeHandlerMixin {
 
     /**
